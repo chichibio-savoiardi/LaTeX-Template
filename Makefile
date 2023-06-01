@@ -2,7 +2,7 @@
 PROJ=main
 # LaTeXMK
 LMK=latexmk
-LMKOPTS=--pdf --use-make --outdir=out --auxdir=build
+LMKOPTS=--pdf --use-make --outdir=out --auxdir=aux --bibfudge --indexfudge
 
 proj: $(PROJ).pdf
 	

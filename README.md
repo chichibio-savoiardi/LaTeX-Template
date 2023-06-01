@@ -1,7 +1,9 @@
 # LaTeX Template
 
+**Remember to change the language in `sty/preamble.sty`**
+
 This template features:
 - Very simple `Makefile`
-- Compilation files in `build/` and output files in `out/`, for sanity
-- Premade packages for convenience
-- Booklet production, for producing an a5 booklet to be printed on a4 paper
+- Compilation files in `aux/` and output files in `out/`, for sanity
+- Premade convenience packages
+- Booklet production, for producing an a5 booklet to be printed and folded on a4 paper
