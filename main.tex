@@ -1,11 +1,13 @@
-\documentclass[12pt]{report}
+\documentclass[12pt]{scrreprt}
 
 \usepackage{sty/preamble}
 \usepackage{sty/preamble-math}
 \usepackage{sty/preamble-code}
 
 % Opening
+\subject{Tipografia}
 \title{Template \LaTeX}
+\subtitle{Con KOMA-Script}
 \author{Iuri Antico}
 \date{\today}
 
@@ -16,6 +18,8 @@
 	\end{titlepage}
 	
 	\tableofcontents
+	%\listoffigures
+	%\listoftables
 	
 	\part{Parte}
 	\chapter{Capitolo}
@@ -27,6 +31,6 @@
 	\paragraph{Paragrafo}
 	\subparagraph{Sottoparagrafo}
 	
-	\bibliographystyle{plain}
+	\bibliographystyle{alpha}
 	\bibliography{bib/biblio}
 \end{document}
