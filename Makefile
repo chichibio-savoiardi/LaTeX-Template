@@ -1,13 +1,17 @@
 # Main filename
-PROJ=main
+ALL=$(patsubst %.tex,%.pdf,$(wildcard *.tex))
+PDF=Template.pdf
 # LaTeXMK
 LMK=latexmk
 LMKOPTS=--pdf --use-make --outdir=out --auxdir=aux --bibfudge --indexfudge
 
-proj: $(PROJ).pdf
-	
+all: $(ALL)
+
+pdf: all
+	cp -f ./out/main.pdf ./$(PDF)
+
 booklet: prebooklet.pdf booklet.pdf
-	
+
 clean:
 	$(LMK) -c
 	
