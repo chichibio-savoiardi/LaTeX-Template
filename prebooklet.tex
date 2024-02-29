@@ -1,19 +1,19 @@
-\documentclass[12pt]{scrreprt}
+\documentclass[fontsize=12pt, a5paper]{scrreprt}
 
-\usepackage{sty/preamble-prebooklet}
+\usepackage{sty/preamble}
 \usepackage{sty/preamble-math}
 \usepackage{sty/preamble-code}
 
 % Opening
+\subject{Tipografia}
 \title{Template \LaTeX}
+\subtitle{Con KOMA-Script}
 \author{Chichibio}
 \date{\today}
 
 \begin{document}
 	
-	\begin{titlepage}
-		\maketitle
-	\end{titlepage}
+	\maketitle
 	
 	\tableofcontents
 	
@@ -27,6 +27,6 @@
 	\paragraph{Paragrafo}
 	\subparagraph{Sottoparagrafo}
 	
-	\bibliographystyle{plain}
+	\bibliographystyle{alpha}
 	\bibliography{bib/biblio}
 \end{document}
