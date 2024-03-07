@@ -9,27 +9,39 @@
 \title{Template \LaTeX}
 \subtitle{Con KOMA-Script}
 \author{Chichibio}
-\date{\today}
+\date{\ISOToday ~ \thistime}
 
 \begin{document}
 	
 	\maketitle
 	
+	\cleardoublepage
+	\phantomsection
+	\addcontentsline{toc}{chapter}{Indice}
 	\tableofcontents
-	%\lstlistoflistings
-	%\listoffigures
-	%\listoftables
 	
 	\part{Parte}
+	Parte
+
 	\chapter{Capitolo}
+	Capitolo
 	\section{Sezione}
+	Sezione
 	\subsection{Sottosezione}
+	Sottosezione
 	\subsubsection{Sottosottosezione}
-	Citazione \cite{IuriTex}
+	Sottosottosezione
 
 	\paragraph{Paragrafo}
+	Paragrafo
 	\subparagraph{Sottoparagrafo}
+	Sottoparagrafo
+
+	\lstlistoflistings
+	\listoffigures
+	\listoftables
 	
+	\nocite{IuriTex}
 	\bibliographystyle{alpha}
 	\bibliography{bib/biblio}
 \end{document}

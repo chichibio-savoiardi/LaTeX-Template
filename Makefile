@@ -17,6 +17,7 @@ clean:
 	
 cleanall:
 	$(LMK) -C
+	rm -rf ./aux ./out
 
 %.pdf: %.tex
 	$(LMK) $(LMKOPTS) $<
