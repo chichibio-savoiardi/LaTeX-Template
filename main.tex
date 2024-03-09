@@ -4,44 +4,8 @@
 \usepackage{sty/preamble-math}
 \usepackage{sty/preamble-code}
 
-% Opening
-\subject{Tipografia}
-\title{Template \LaTeX}
-\subtitle{Con KOMA-Script}
-\author{Chichibio}
-\date{\ISOToday ~ \thistime}
+\import{./tex}{title}
 
 \begin{document}
-	
-	\maketitle
-	
-	\cleardoublepage
-	\phantomsection
-	\addcontentsline{toc}{chapter}{Indice}
-	\tableofcontents
-	
-	\part{Parte}
-	Parte
-
-	\chapter{Capitolo}
-	Capitolo
-	\section{Sezione}
-	Sezione
-	\subsection{Sottosezione}
-	Sottosezione
-	\subsubsection{Sottosottosezione}
-	Sottosottosezione
-
-	\paragraph{Paragrafo}
-	Paragrafo
-	\subparagraph{Sottoparagrafo}
-	Sottoparagrafo
-
-	\lstlistoflistings
-	\listoffigures
-	\listoftables
-	
-	\nocite{IuriTex}
-	\bibliographystyle{alpha}
-	\bibliography{bib/biblio}
+	\import{./tex}{content}
 \end{document}

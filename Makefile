@@ -5,7 +5,7 @@ PDF=Template.pdf
 LMK=latexmk
 LMKOPTS=--pdf --use-make --outdir=out --auxdir=aux --bibfudge --indexfudge
 
-all: $(ALL)
+all: booklet $(ALL)
 
 pdf: all
 	cp -f ./out/main.pdf ./$(PDF)
