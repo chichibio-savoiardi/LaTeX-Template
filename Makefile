@@ -5,10 +5,11 @@ PDF=Template.pdf
 LMK=latexmk
 LMKOPTS=--pdf --use-make --outdir=out --auxdir=aux --bibfudge --indexfudge
 
-all: booklet $(ALL)
+all: main.pdf booklet
 
 pdf: all
 	cp -f ./out/main.pdf ./$(PDF)
+	cp -f ./out/booklet.pdf ./Booklet_$(PDF)
 
 booklet: prebooklet.pdf booklet.pdf
 
@@ -21,3 +22,6 @@ cleanall:
 
 %.pdf: %.tex
 	$(LMK) $(LMKOPTS) $<
+
+%.ind: %.idx
+	makeindex $<
