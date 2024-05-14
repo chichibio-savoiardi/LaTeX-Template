@@ -1,6 +1,8 @@
 # Main filename
 ALL=$(patsubst %.tex,%.pdf,$(wildcard *.tex))
 PDF=Template.pdf
+FIG_DIR=fig/
+
 # LaTeXMK
 LMK=latexmk
 LMKOPTS=--pdf --use-make --outdir=out --auxdir=aux --bibfudge --indexfudge
@@ -25,3 +27,10 @@ cleanall:
 
 %.ind: %.idx
 	makeindex $<
+
+drawio/%.png: $(FIG_DIR)drawio/%.drawio
+	drawio --export --output ./$(FIG_DIR)$@ $<
+
+puml/%.png: $(FIG_DIR)puml/%.puml
+	plantuml $<
+

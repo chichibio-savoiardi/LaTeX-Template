@@ -12,6 +12,13 @@
 *.cb2
 .*.lb
 
+## Compilable raster images
+*.png
+*.jpg
+*.jpeg
+# Other images
+!fig/img/*
+
 ## Intermediate documents:
 *.dvi
 *.xdv
@@ -41,10 +48,12 @@
 *.pdfsync
 
 ## Build tool directories for auxiliary files
-# latexrun
-latex.out/
+# Makefile
 aux/
 out/
+
+# latexrun
+latex.out/
 
 ## Auxiliary and intermediate files from other packages:
 # algorithms
