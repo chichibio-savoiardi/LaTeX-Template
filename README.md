@@ -4,6 +4,7 @@
 
 This template features:
 - KOMA-Script
+- BibLaTeX (needs `biber` installed)
 - Very simple `Makefile`
 - Compilation files in `aux/` and output files in `out/`, for sanity
 - Premade convenience packages
